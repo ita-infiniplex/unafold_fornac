@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DNA/RNA Structure Viewer</title>
+    
+    <!-- Load D3 v3 (required by fornac) -->
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    
+    <!-- Load fornac from node_modules -->
+    <script src="/node_modules/fornac/dist/fornac.js"></script>
+    <link rel="stylesheet" href="/node_modules/fornac/dist/fornac.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DNA/RNA Structure Viewer</h1>
+        
+        <div class="example">
+            <p>Example sequences:</p>
+            <pre>Sequence 1: GCGCTTAAGCGC
+Sequence 2: GCGCTTAAGCGC</pre>
+        </div>
+        
+        <form id="sequenceForm">
+            <div class="input-group">
+                <label for="seq1">Sequence 1:</label>
+                <textarea id="seq1" required></textarea>
+            </div>
+            
+            <div class="input-group">
+                <label for="seq2">Sequence 2:</label>
+                <textarea id="seq2" required></textarea>
+            </div>
+            
+            <div class="input-group">
+                <label for="temp">Temperature (°C):</label>
+                <input type="number" id="temp" value="37" required>
+            </div>
+            
+            <button type="submit">Analyze Structure</button>
+        </form>
+        
+        <div id="structure-container"></div>
+    </div>
+    
+    <script src="/app.js"></script>
+</body>
+</html> 
