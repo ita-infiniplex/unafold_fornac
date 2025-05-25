@@ -91,18 +91,6 @@ Response:
 - fornac: RNA/DNA structure visualization
 - d3.v3: Required for fornac visualization
 
-## License
-
-[Your chosen license]
-
-## Contributing
-
-[Your contribution guidelines]
-
-## Authors
-
-[Your name/organization]
-
 ## Acknowledgments
 
 - UNAFold developers
